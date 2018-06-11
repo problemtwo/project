@@ -31,7 +31,7 @@ window.onload = () => {
  }
 
  function update() {
-  if(keys.shift && keys.others[78]){
+  if(keys.shift && keys.others[78] && document.activeElement === document.body){
    const node = document.querySelector('#t-cell');
    const content = document.importNode(node.content,true);
    let cell_x = last_added_cell.left + 30;
